@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    width: 200px;
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    font-size: 1.1em;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+nav a.active {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+
+.profile-link {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* start of profile acc */
+.main-layout {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.content-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Make Favorites & Posts section wider */
+.tabs-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.sidebar-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #6734f1;
+  color: #6734f1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Make profile card smaller */
+.account-settings-card {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.upload-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #6734f1;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+}
+
+.upload-btn:hover {
+  background: #4b27c1;
+}
+
+.upload-btn input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bio-input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 60px;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.social-links label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.social-links input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.logout-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.logout-btn {
+  padding: 10px 15px;
+  background-color: #6734f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #4b27c1;
+}

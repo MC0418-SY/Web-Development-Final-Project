@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../quillory-icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quillory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS FILES/profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title"><a href="dashboard.html">Quillory</a></div>
+      
+      <nav>
+            <ul>
+              <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+              <li><a href="post.html" class="nav-link">Create Post</a></li>
+            </ul>
+      </nav>
+
+      <a href="profile.html" class="profile-link" aria-label="Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="profile-icon" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+        </a>
+    </header>
+        <div class="main-layout">
+          <div class="content-layout">
+            <!-- Favorites & Posts Section -->
+            <div class="tabs-section">
+              <div class="sidebar-tabs">
+                <button class="tab-btn active" data-tab="favorites">Favorites</button>
+                <button class="tab-btn" data-tab="posts">Posts</button>
+              </div>
+
+              <div class="tab-content active" id="favorites">
+                <p>No favorites yet.</p>
+              </div>
+
+              <div class="tab-content" id="posts">
+                <p>No posts yet.</p>
+              </div>
+            </div>
+
+            <!-- Account Card -->
+            <div class="card account-settings-card">
+              <h4>Your Account</h4>
+              <div class="profile-container">
+                <div class="profile-picture">
+                  <img src="pf.jpg" alt="Profile Picture" class="profile-img" />
+                  <label class="upload-btn">
+                    Upload Picture
+                    <input type="file" class="account-settings-fileinput" />
+                  </label>
+                </div>
+
+                <textarea class="bio-input" placeholder="Write a short bio..."></textarea>
+
+                <div class="profile-info">
+                  <input type="text" placeholder="Name" class="form-control" />
+                  <input type="email" placeholder="Email" class="form-control" />
+
+                  <div class="social-links">
+                    <label><i class="fab fa-facebook-square"></i> <input type="url" placeholder="Facebook URL" /></label>
+                    <label><i class="fab fa-twitter-square"></i> <input type="url" placeholder="Twitter URL" /></label>
+                    <label><i class="fab fa-instagram-square"></i> <input type="url" placeholder="Instagram URL" /></label>
+                    <label><i class="fab fa-linkedin"></i> <input type="url" placeholder="LinkedIn URL" /></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="logout-container">
+                <a href="index.html" class="logout-btn">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    <script src="../JAVASCRIPT FILES/profile.js"></script>
+  </body>
+</html>

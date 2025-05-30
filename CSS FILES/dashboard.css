@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    width: 200px;
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-link {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  
+
+
+
+  .dashboard-summary,
+  .post-feed {
+    max-width: 600px; /* Same width for both */
+    width: 100%;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .post-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px; /* Ensure the width is consistent */
+    width: 100%;
+    margin: 0 auto; /* Center the feed */
+    padding: 0 16px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+  }
+  
+  .post-card {
+    width: 100%; /* Take full width of the parent */
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .post-feed .post-card:last-child {
+    margin-bottom: 60px;
+  }
+  
+  .post-meta {
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-meta span {
+    color: #888;
+  }
+  
+  .delete-published {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  font-size: 1.1em;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.301);
+}
+
+nav a.active {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+nav a.active:hover {
+    background: #f3f3f3ee;
+}
+
+
+
+
+
+.view-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.static-icon {
+  position: absolute; /* Position it relative to the container */
+  bottom: 20px; /* Distance from the bottom of the container */
+  left: 20px; /* Distance from the left of the container */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dashboard-summary {
+  position: relative; /* Make the container a positioning context */
+  max-width: 750px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  text-align: center;
+}
+
+/* New Post Button */
+.new-post-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 28em;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  z-index: 1000;
+}
+
+.new-post-btn svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+.new-post-btn:hover {
+  transform: scale(1.1);
+  background-color: #131313;
+}
+
+/* Filter Bar Styles */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.filter-bar label {
+  font-size: 0.9em;
+  color: #333;
+}
+
+.filter-bar select,
+.filter-bar input[type="checkbox"] {
+  padding: 4px 8px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Edit Post Button */
+.edit-post {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.edit-post:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  gap: 8px; /* Adjust spacing between buttons as needed */
+  align-items: center;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  /* Adjust header padding */
+  header {
+    padding: 10px 20px;
+  }
+  /* Center and scale-down summary and posts feed */
+  .dashboard-summary,
+  .post-feed {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 16px;
+  }
+  /* Reduce gap and font size between nav items */
+  nav ul {
+    gap: 12px;
+    font-size: 0.95em;
+  }
+  /* Adjust new post button position and padding */
+  .new-post-btn {
+    left: 20px;
+    padding: 12px;
+  }
+  /* Ensure the static svg icon stays at bottom left */
+  .static-icon {
+    left: 20px;
+  }
+}
+
+/* Responsive styles for tablets and iPads */
+@media (max-width: 900px) and (min-width: 601px) {
+  /* Adjust header padding */
+  header {
+    padding: 10px 30px;
+  }
+  /* Center summary and posts feed with a bit more margin */
+  .dashboard-summary,
+  .post-feed {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 18px;
+  }
+  /* Slightly adjust nav items for better spacing */
+  nav ul {
+    gap: 15px;
+    font-size: 1em;
+  }
+  /* Reposition new post button closer to the left */
+  .new-post-btn {
+    left: 20px;
+    padding: 14px;
+  }
+  /* If needed, adjust font sizes or other elements specifically for tablets */
+}
